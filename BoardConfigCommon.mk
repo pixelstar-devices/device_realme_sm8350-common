@@ -127,6 +127,11 @@ TARGET_BOARD_PLATFORM := lahaina
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
+# LTO
+GLOBAL_THINLTO := true
+USE_THINLTO_CACHE := true
+SKIP_ABI_CHECKS := true
+
 # Partitions
 BOARD_PRODUCTIMAGE_MINIMAL_PARTITION_RESERVED_SIZE := false
 -include vendor/lineage/config/BoardConfigReservedSize.mk
