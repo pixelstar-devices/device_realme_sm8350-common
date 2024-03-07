@@ -170,13 +170,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     OplusDoze
 
-# Dex
-PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
-
-PRODUCT_SYSTEM_PROPERTIES += \
-    dalvik.vm.dex2oat-filter=everything \
-    dalvik.vm.image-dex2oat-filter=everything
-
 # Dex to make OTA go faster
 PRODUCT_VENDOR_PROPERTIES += \
     dalvik.vm.boot-dex2oat-cpu-set=1,2,3,4,5,6,7 \
